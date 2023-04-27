@@ -5,15 +5,11 @@ const cors = require('cors');
 app.use(express.json());
 app.use(cors());
 
-const db = new sqlite3.Database(
-  './employee.db',
-  sqlite3.OPEN_READWRITE,
-  (err) => {
-    if (err) return console.error(err.message);
+const db = new sqlite3.Database('./car.db', sqlite3.OPEN_READWRITE, (err) => {
+  if (err) return console.error(err.message);
 
-    console.log('connection succesful');
-  }
-);
+  console.log('connection succesful');
+});
 
 app.get('/view', function (request, response) {
   const sql = 'SELECT * FROM Cars';
