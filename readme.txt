@@ -1,3 +1,5 @@
+(órai munka, cél az API helyes használata, a kód testre szabása, képzeletbeli vállalkozást segítő alkalmazás létrehozása)
+
 Töltsd le a teljes repót és tömörítsd ki a mappát valahova.
 Nyisd meg a backend mappát console-ban, vagy terminálban!
 npm i parancs consoleban
